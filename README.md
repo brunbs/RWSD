@@ -23,7 +23,7 @@ O projeto ainda está em desenvolvimento...
 Projects made while reading the Real-World Software Development - A Project-Driven Guide to Fundamentals in JAVA
 Variables, classes, file names, etc are all in portuguese for better understanding.
 
-Project 1 - TransacoesBancararias
+Project 1 - TransacoesBancarias
 This projects' goal is to read a CSV file referring to a bank statement in the following format:
 date,value,description
 
