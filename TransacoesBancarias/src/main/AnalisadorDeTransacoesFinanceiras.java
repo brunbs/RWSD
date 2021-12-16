@@ -9,17 +9,13 @@ import java.util.List;
 
 public class AnalisadorDeTransacoesFinanceiras {
 
-    private static final String RESOURCES = "src/main/resources/";
+    public static final String RESOURCES = "TransacoesBancarias/src/main/resources/";
+    //final String nomeDoArquivo = "extrato.csv";
 
-    public static void main(String[] args) throws IOException {
-        final ConversorDeCSV conversorDeCSV = new ConversorDeCSV();
-
-        final String nomeDoArquivo = "extrato.csv";
+    public static void analisar(final String nomeDoArquivo, final ConversorDeExtratoBancario conversorDeExtratoBancario) throws IOException {
         final Path path = Paths.get(RESOURCES + nomeDoArquivo);
         final List<String> linhas = Files.readAllLines(path);
-
-        final List<TransacaoBancaria> transacoesBancarias = conversorDeCSV.converteLinhaDoCSV(linhas);
-
+        final List<TransacaoBancaria> transacoesBancarias = conversorDeExtratoBancario.converteLinhasDe(linhas);
         final ProcessadorDeDeclaracaoBancaria processadorDeDeclaracaoBancaria= new ProcessadorDeDeclaracaoBancaria(transacoesBancarias);
         geraRelatorio(processadorDeDeclaracaoBancaria);
 
