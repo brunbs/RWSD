@@ -15,7 +15,7 @@ O objetivo do projeto é criar um sistema que lê o arquivo e forneça ao usuár
 3 - movimentação com uma certa descrição fornecida pelo usuário (por exemplo: salário)
 
 Com este projeto, revisitei alguns fundamentos como:
-KISS, DRY e SRP
+KISS, DRY, SRP, Acoplamento e testes automatizados.
 
 O projeto ainda está em desenvolvimento...
 
@@ -33,6 +33,6 @@ The program should present to the user the following informations:
 3 - transactions of a category determined by the user (e.g. "salary")
 
 With this project I could revisit some concepts as:
-KISS, DRY and SRP.
+KISS, DRY, SRP, Coupling and automated tests.
 
 This project is still in development...
